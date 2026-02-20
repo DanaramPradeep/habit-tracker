@@ -1,0 +1,121 @@
+/* Simple Habit Tracker - Basic CSS */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Add Habit Section */
+.add-habit {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#habitInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+#addHabitBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addHabitBtn:hover {
+    background-color: #45a049;
+}
+
+/* Habits List */
+.habits-list {
+    list-style: none;
+}
+
+.habit-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.habit-item:last-child {
+    border-bottom: none;
+}
+
+.habit-name {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Habit Checkbox */
+.habit-check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Delete Button */
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
+
+/* Stats */
+.stats {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    text-align: center;
+    color: #666;
+}
